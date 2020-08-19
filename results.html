@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Results</title>
+</head>
+<body>
+  <iframe id="results" width="100%" height="1000px" seamless frameborder="0" scrolling="no"></iframe>
+  <script>
+    var iframeSrc = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtABM4qMIFiNqiK0-17KC-Ue6tZvT7hA-KFw9ngQfU_psiRprFcqUIrxLS4x6e2yggd_Ga8Kqvmm98/pubchart?oid=130778353&amp;format=interactive';
+    iframeSrc += '&v=' + Date.now()
+    var iframe = document.getElementById('results');
+    iframe.src = iframeSrc
+    setTimeout(function() {
+      // window.location.reload()
+    }, 5000)
+  </script>
+</body>
+</html>
